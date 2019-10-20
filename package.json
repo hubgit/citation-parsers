@@ -12,6 +12,7 @@
     "@retorquere/bibtex-parser": "^1.0.74",
     "astrocite-bibtex": "^0.15.4",
     "biblatex-csl-converter": "^1.6.9",
+    "bibtex-parse-js": "^0.0.24",
     "json-stable-stringify": "^1.0.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"

@@ -2,6 +2,7 @@ import React, { FormEvent, useCallback, useState } from 'react'
 import './App.css'
 import { Astrocite } from './Astrocite'
 import { BibLatexCslConverter } from './BibLatexCslConverter'
+import { BibtexParse } from './BibtexParse'
 import { BibtexParser } from './BibtexParser'
 import { Citation } from './Citation'
 
@@ -58,6 +59,7 @@ export const App: React.FC = () => {
             <BibtexParser input={inputToParse} />
             <BibLatexCslConverter input={inputToParse} />
             <Citation input={inputToParse} />
+            <BibtexParse input={inputToParse} />
           </>
         )}
       </div>

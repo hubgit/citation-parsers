@@ -37,7 +37,7 @@ export const App: React.FC = () => {
     <div className={'container'}>
       <h1>BabelBib</h1>
 
-      <p>Compare BibTeX Parsers</p>
+      <p>Compare JavaScript BibTeX Parsers</p>
 
       <form onSubmit={handleSubmit}>
         <textarea

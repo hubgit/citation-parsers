@@ -1,5 +1,5 @@
 {
-  "name": "babelbib",
+  "name": "citation-parsers",
   "version": "0.1.0",
   "private": true,
   "scripts": {

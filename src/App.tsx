@@ -35,7 +35,7 @@ export const App: React.FC = () => {
 
   return (
     <div className={'container'}>
-      <h1>BabelBib</h1>
+      <h1>Citation Parsers</h1>
 
       <p>Compare JavaScript BibTeX Parsers</p>
 

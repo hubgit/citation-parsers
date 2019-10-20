@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "babelbib",
-  "alias": "babelbib",
+  "name": "citation-parsers",
+  "alias": "citation-parsers",
   "builds": [
     {
       "src": "package.json",

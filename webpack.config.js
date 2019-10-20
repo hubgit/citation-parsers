@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const title = 'BabelBib' // EDIT THIS
+const title = 'Citation Parsers' // EDIT THIS
 
 module.exports = {
   module: {

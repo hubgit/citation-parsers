@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "name": "my-react-app",
-  "alias": "my-react-app",
+  "name": "citation-parsers",
+  "alias": "citation-parsers",
   "builds": [
     {
       "src": "package.json",

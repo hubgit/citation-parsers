@@ -1,7 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-const title = 'My React App' // EDIT THIS
+const title = 'BabelBib' // EDIT THIS
 
 module.exports = {
   module: {
@@ -21,7 +21,7 @@ module.exports = {
     filename: 'js/[name].[contenthash].js',
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.json'],
   },
   performance: {
     hints: false,
@@ -30,7 +30,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       favicon: 'public/favicon.ico',
-      template: 'public/index.ejs',
+      template: 'public/index.html',
       title,
     }),
   ],

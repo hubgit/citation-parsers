@@ -3,6 +3,7 @@ import './App.css'
 import { Astrocite } from './Astrocite'
 import { BibLatexCslConverter } from './BibLatexCslConverter'
 import { BibtexParse } from './BibtexParse'
+import { BibtexParser } from './BibtexParser'
 import { Citation } from './Citation'
 
 const example = `@article {terSteege1243092,
@@ -55,8 +56,9 @@ export const App: React.FC = () => {
         {inputToParse && (
           <>
             <Astrocite input={inputToParse} />
-            <Citation input={inputToParse} />
+            <BibtexParser input={inputToParse} />
             <BibLatexCslConverter input={inputToParse} />
+            <Citation input={inputToParse} />
             <BibtexParse input={inputToParse} />
           </>
         )}

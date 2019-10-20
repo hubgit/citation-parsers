@@ -18,11 +18,12 @@ export const BibLatexCslConverter: React.FC<{
           processUnknown: true,
         })
 
-        const data = parser.parse()
+        parser.parse()
 
-        const exporter = new CSLExporter(data)
+        const exporter = new CSLExporter(parser.bibDB)
         exporter.parse()
-        setItems(Object.values(exporter.bibDB.entries)) // TODO: CSL
+
+        setItems(Object.values(exporter.cslDB))
       } catch (error) {
         setError(error.message)
       }
@@ -39,7 +40,11 @@ export const BibLatexCslConverter: React.FC<{
 
   return (
     <section>
-      <h2>BibLatexCslConverter</h2>
+      <h2>
+        <a href={'https://github.com/fiduswriter/biblatex-csl-converter'}>
+          biblatex-csl-converter
+        </a>
+      </h2>
       <ol>
         {items.map(item => (
           <li key={item.citationKey}>

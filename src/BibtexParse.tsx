@@ -31,7 +31,9 @@ export const BibtexParse: React.FC<{
 
   return (
     <section>
-      <h2>bibtexParse</h2>
+      <h2>
+        <a href={'https://github.com/ORCID/bibtexParseJs'}>bibtexParseJs</a>
+      </h2>
       <ol>
         {items.map(item => (
           <li key={item.citationKey}>

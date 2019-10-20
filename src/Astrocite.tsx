@@ -31,7 +31,9 @@ export const Astrocite: React.FC<{
 
   return (
     <section>
-      <h2>Astrocite</h2>
+      <h2>
+        <a href={'https://github.com/dsifford/astrocite'}>astrocite</a>
+      </h2>
       <ol>
         {items.map(item => (
           <li key={item.id}>

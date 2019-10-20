@@ -37,7 +37,9 @@ export const Citation: React.FC<{
 
   return (
     <section>
-      <h2>Citation.js</h2>
+      <h2>
+        <a href={'https://github.com/larsgw/citation.js'}>Citation.js</a>
+      </h2>
       <ol>
         {items.map(item => (
           <li key={item.id}>

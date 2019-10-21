@@ -24,7 +24,6 @@ const parsers = [
   'astrocite',
   'bib2json',
   'biblatex-csl-converter',
-  // 'bibtex',
   'bibtex-parse-js',
   'bibtex-parser',
   'citation-js',

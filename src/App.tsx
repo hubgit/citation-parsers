@@ -1,3 +1,4 @@
+// @ts-ignore
 import stringify from 'json-stable-stringify'
 import React, { FormEvent, useCallback, useState } from 'react'
 import './App.css'
@@ -103,6 +104,7 @@ export const App: React.FC = () => {
             {result.error && <div>{result.error}</div>}
             <pre>
               {stringify(result.items, {
+                // @ts-ignore
                 cmp: (a, b) => (a.key < b.key ? -1 : 1),
                 space: 2,
               })}

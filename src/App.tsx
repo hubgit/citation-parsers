@@ -24,6 +24,7 @@ const parsers = [
   'astrocite',
   'bib2json',
   'biblatex-csl-converter',
+  // 'bibtex',
   'bibtex-parse-js',
   'bibtex-parser',
   'citation-js',
@@ -79,8 +80,6 @@ export const App: React.FC = () => {
 
   return (
     <div className={'container'}>
-      <h1>Citation Parsers</h1>
-
       <p>Compare JavaScript BibTeX Parsers</p>
 
       <form onSubmit={handleSubmit}>

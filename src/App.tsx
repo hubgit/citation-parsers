@@ -50,8 +50,8 @@ const parseInput = async (input: string) => {
     let items, error
     try {
       items = await parse(input)
-    } catch (e) {
-      error = e.message
+    } catch (e: unknown) {
+      error = (e as Error).message
     }
 
     output[path] = { name, url, items, error }
@@ -70,7 +70,7 @@ export const App: React.FC = () => {
 
       parseInput(input)
         .then(setResults)
-        .catch(error => {
+        .catch((error) => {
           console.error(error)
         })
     },
@@ -84,7 +84,7 @@ export const App: React.FC = () => {
       <form onSubmit={handleSubmit}>
         <textarea
           value={input}
-          onChange={event => setInput(event.target.value)}
+          onChange={(event) => setInput(event.target.value)}
           rows={20}
           cols={50}
         />

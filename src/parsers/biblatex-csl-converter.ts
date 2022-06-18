@@ -1,4 +1,3 @@
-// @ts-ignore
 import { BibLatexParser, CSLExporter } from 'biblatex-csl-converter'
 
 export default {
